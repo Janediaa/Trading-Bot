@@ -729,38 +729,6 @@ cat logs/trading_bot.log
 
 ---
 
-## Security Notes
-
-⚠️ **IMPORTANT SECURITY CONSIDERATIONS**
-
-1. **Never commit .env file to git**
-   - `.gitignore` prevents this by default
-   - Your API keys would be exposed
-
-2. **API Keys are sensitive**
-   - Treat like passwords
-   - Rotate if accidentally exposed
-   - Use testnet keys for testing (lower risk)
-
-3. **Use Testnet for Development**
-   - Testnet uses practice funds only
-   - No real money at risk
-   - Safe environment for testing
-
-4. **Limit API Key Permissions**
-   - Enable only "Futures Trading"
-   - Disable withdrawal permissions
-   - IP whitelist if available (testnet: N/A)
-
-5. **Monitor Logs**
-   - Check `logs/trading_bot.log` regularly
-   - Look for unauthorized access attempts
-   - Report suspicious activity to Binance
-
----
-
-## Support & Maintenance
-
 ### Updating Dependencies
 
 ```bash
